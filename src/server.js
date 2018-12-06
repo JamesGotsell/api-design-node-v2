@@ -7,8 +7,8 @@ import { signin, protect } from './api/modules/auth'
 const app = express()
 
 
-app.get('/', (req,res) => {
-    res.send("hello world")
+app.all('*', (req,res) => {
+    res.json({ok:true})
 
 })
 

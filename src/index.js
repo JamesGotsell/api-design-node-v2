@@ -5,7 +5,7 @@ import app from './server'
 const server = http.createServer(app)
 let currentApp = app
 
-currentApp.listen(3000, () => {
+server.listen(3000, () => {
 	console.log('http://localhost:3000')
 })
 
