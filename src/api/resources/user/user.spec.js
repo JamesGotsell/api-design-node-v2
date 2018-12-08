@@ -2,7 +2,7 @@ import { expect } from 'chai'
 import createApiSpec from '~/apiSpecs'
 import { User, schema } from './user.model'
 
-describe('User Model', () => {
+xdescribe('User Model', () => {
   it('should have username', () => {
     expect(schema.username).to.exist
     expect(schema.username.type).to.eql(String)
